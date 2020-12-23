@@ -1,3 +1,3 @@
-# Package uk.co.ceilingcat.refuserecyclingdates.entities
+# Package uk.co.ceilingcat.rrd.entities
 
 Enterprise Business Rules
