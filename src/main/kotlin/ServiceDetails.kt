@@ -5,10 +5,18 @@ package uk.co.ceilingcat.rrd.entities
 import java.time.LocalDate
 
 /**
- * Represents a pending service date and type.
+ * Represents an upcoming service.
  */
 interface ServiceDetails : Comparable<ServiceDetails> {
+
+    /**
+     * The date on which this service is expected.
+     */
     val date: ServiceDate
+
+    /**
+     * The type of this service.
+     */
     val type: ServiceType
 }
 
@@ -37,9 +45,9 @@ private data class ImmutableServiceDetails(
 }
 
 /**
- * Create a `ServiceDetails`.
+ * Constructs an immutable instance.
  *
- * @param date the day on which the service applies
+ * @param date the date to which the service applies
  * @param type the type of service
  *
  * @constructor
